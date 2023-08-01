@@ -46,5 +46,5 @@ To do the same, do the same steps as the fine-tuning example but replace the fin
 Providing you are through with fine-tuning/pre-training your model from scratch, you can now use it for generation. With this regard, run the "ProtGPT2_generate.py" attached script. 
 Do not forget to specify the directories of both the model and tokenizer (e.g., do u already have the model on ur machine? do you need to load it from a bucket first? etc.). Furthermore, the directory to the input dataset should denote the excluded test set to be used for prompting. <br>
 If you want to test models that already finished training, feel free to use mine: <br>
-    (i) the finetuned model can be found in s3://wafaa-proteinea-bucket/protgpt2_finetune_gfp_2
+    (i) the finetuned model can be found in s3://wafaa-proteinea-bucket/protgpt2_finetune_gfp_2 <br>
     (ii) the model trained from scratch can be found in s3://wafaa-proteinea-bucket/protgpt2_pretrain_gfp
