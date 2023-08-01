@@ -19,6 +19,8 @@ Now, to meet the formating required by ProtGP2, the authors adivse the following
     <br>
     (iv) I attached a my script, "ProtGPT2_Input_preprocessing.py" for converting a pre-processed fasta file into the desired format and do the splitting into 3 .txt files according to the desired split ratio<br>
     <br>
+    (v) Also attached is an example .fasta file that can be used <br>
+    <br>
 ### 1.e Upload your train, validation, and test.txt files to the same directory 
 The repo contains examples for the desired
 ### 1.f Fulfill Dependencies 
@@ -41,4 +43,5 @@ To do the same, do the same steps as the fine-tuning example but replace the fin
 **As the last example, it's advised to use a screen prior to training start** <br>
 
 ## 3) Generating Sequences Using the Fine-tuned/Pre-trained Model 
-Providing you are through with fine-tuning/pre-training your model from scratch, you can now use it for generation. With this regard, run the 
+Providing you are through with fine-tuning/pre-training your model from scratch, you can now use it for generation. With this regard, run the "ProtGPT2_generate.py" attached script. 
+Do not forget to specify the directories of both the model and tokenizer (e.g., do u already have the model on ur machine? do you need to load it from a bucket first? etc.). Furthermore, the directory to the input dataset should denote the excluded test set to be used for prompting.
