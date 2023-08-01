@@ -12,10 +12,12 @@ Replace the "run_clm.py"file in the following directory with the one in this rep
 ### 1.d Format your data to be compatible with ProtGPT2 required input 
 Now, to meet the formating required by ProtGP2, the authors adivse the following if your starting point is fasta files: <br>
     (i) substitute the FASTA headers for each sequence with the expression "<|endoftext|>" and <br>
-    (ii) split the originating dataset into training and validation .txt files (this is often done with the ratio 90/10, 80/20 or 95/5). <br>
-The fine-tuning requires only training and validation sets, **please exclude your test set prior to fine-tuning.** <br>
-P.Ss: <br>
-    (i) you can do any problem-specific data pre-processing prior to this step (e.g., max_length truncation) <br>
-    (ii) I attached a my script, "ProtGPT2_Input_preprocessing.py" for converting a pre-processed fasta file into the desired format and do the splitting into 3 .txt files according to the desired split ratio<br>
+    <br>
+    (ii) split the originating dataset into training and validation .txt files (this is often done with the ratio 90/10, 80/20 or 95/5). The fine-tuning requires only training and validation sets, **please exclude your test set prior to fine-tuning.** <br>
+    <br>
+    (iii) you can do any problem-specific data pre-processing prior to this step (e.g., max_length truncation) <br>
+    <br>
+    (iv) I attached a my script, "ProtGPT2_Input_preprocessing.py" for converting a pre-processed fasta file into the desired format and do the splitting into 3 .txt files according to the desired split ratio<br>
+    <br>
 ### 1.e Upload your train, validation, and test.txt files to the same directory 
 The repo contains examples for the desired
