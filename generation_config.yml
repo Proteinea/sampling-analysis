@@ -1,0 +1,15 @@
+experiment_prefix: mdh_temp_1
+reference_file: mhd_train_sample.fasta
+wandb_project: mdh_generations
+model_checkpoint_path: ./output_mhd/checkpoint-4800
+generate_batch_size: 32
+sequence_prompt_index: 5
+generate_kwargs:
+  do_sample: true
+  eos_token_id: 0
+  temperature: 1.0
+  num_return_sequences: 1
+change_list: 
+ num_beams:
+  - 1
+  - 2
