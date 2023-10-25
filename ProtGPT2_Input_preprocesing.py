@@ -31,9 +31,9 @@ def split_dataset(sequences, train_ratio):
     return train_set, validation_set
 
 # Example usage
-fasta_file = "/content/GFP_NCBI.fasta"  # Replace with the path to your FASTA file
+fasta_file = "./GFP_NCBI.fasta"  # Replace with the path to your FASTA file
 train_ratio = 0.985  # Modify the ratio as needed (e.g., 0.9 for 90/10 split)
-test_ratio = 0.5  # Modify the ratio as needed (e.g., 0.9 for 90/10 split)
+test_ratio = 0.0  # Modify the ratio as needed (e.g., 0.9 for 90/10 split)
 
 # Step 1: Substitute FASTA headers
 sequences = substitute_fasta_headers(fasta_file)
