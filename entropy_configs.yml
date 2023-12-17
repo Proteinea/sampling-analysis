@@ -1,0 +1,20 @@
+experiment_prefix: mdh_2_groups_div_penalty0.3
+msa_seqs_file: mdh_train_sample.fasta
+reference_file: mdh_train_sample.fasta
+wandb_project: mdh-generations-eval-entropy
+model_checkpoint_path: ./output_mhd/checkpoint-4800
+generate_batch_size: 8
+wandb_entity: sampling-analysis
+sequence_prompt_index: 5
+max_gap_ratio: null
+eos_token_id: 0
+entropy_configs:
+  - n_segments: 7
+    base_temp: 0.3
+    entropy_factor: 1.5
+    # temperature: 1.0
+  - n_segments: 5
+    entropy_factor: 1.5
+    base_temp: 0.3
+
+    # temperature: 1.0
